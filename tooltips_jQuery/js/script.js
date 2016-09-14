@@ -1,5 +1,5 @@
 ;jQuery(document).ready(function($) {
-	$('.input').hover(
+	$('.input').hover (
 		function() {
 			$(this).next('.tooltip').stop().fadeIn()
 		},
@@ -7,6 +7,10 @@
 			$('.tooltip').stop().fadeOut();
 	});
 
+	$('.input').focus(
+		function() {
+  		$(this).next('.tooltip').stop().fadeIn(600)
+		});
 
 	$('.showHelp').on('click', function() {
 		$('.tooltip').fadeIn();
